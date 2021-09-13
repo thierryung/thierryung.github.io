@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+function log(text) {
+  console.log(text);
+  var d = document.createElement("div");
+  d.innerHTML = text;
+  document.body.appendChild(d);
+}
+document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === 'visible') {
+    log("visible");
+  } else {
+    log("invisible");
+  }
+});
+</script>
+</head>
+<body>
+</body>
+</htm>
